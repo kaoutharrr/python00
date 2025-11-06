@@ -14,4 +14,5 @@ def ft_tqdm(lst: range) -> None:
         bar = '=' * filled + ' ' * (bar_width - filled)
         print(f"\r{percent * 100:.0f}%|[{bar}]|{i + 1}/{total}", end='')
         yield item
+
     print()
